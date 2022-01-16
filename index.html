@@ -19,45 +19,37 @@
     <h1 class="title">Hitung Bangun Datar dan Bangun Ruang</h1>
 
     <div class="content">
-        <div class="container select-option-container">
-            <select id="select">
+
+        <div class="container select-type-container">
+            <select id="select-type">
+                <option selected>(pilih)</option>
                 <optgroup label="Bangun Datar">
-                    <option>Keliling Belah Ketupat</option>
-                    <option>Keliling Jajar Genjang</option>
-                    <option>Keliling Layang-Layang</option>
-                    <option>Keliling Lingkaran</option>
-                    <option>Keliling Persegi Panjang</option>
-                    <option>Keliling Persegi</option>
-                    <option>Keliling Segitiga</option>
-                    <option>Keliling Trapesium</option>
-                    <option>Luas Belah Ketupat</option>
-                    <option>Luas Jajar Genjang</option>
-                    <option>Luas Layang-Layang</option>
-                    <option>Luas Lingkaran</option>
-                    <option>Luas Persegi Panjang</option>
-                    <option>Luas Persegi</option>
-                    <option>Luas Segitiga</option>
-                    <option>Luas Trapesium</option>
+                    <option>Belah Ketupat</option>
+                    <option>Jajar Genjang</option>
+                    <option>Layang-Layang</option>
+                    <option>Lingkaran</option>
+                    <option>Persegi Panjang</option>
+                    <option>Persegi</option>
+                    <option>Segitiga</option>
+                    <option>Trapesium</option>
                 </optgroup>
                 <optgroup label="Bangun Ruang">
-                    <option>Luas Permukaan Balok</option>
-                    <option>Luas Permukaan Bola</option>
-                    <option>Luas Permukaan Kerucut</option>
-                    <option>Luas Permukaan Kubus</option>
-                    <option>Luas Permukaan Limas Segiempat</option>
-                    <option>Luas Permukaan Limas Segitiga</option>
-                    <option>Luas Permukaan Prisma Segitiga</option>
-                    <option>Luas Permukaan Tabung</option>
-
-                    <option>Volume Balok</option>
-                    <option>Volume Bola</option>
-                    <option>Volume Kerucut</option>
-                    <option>Volume Kubus</option>
-                    <option>Volume Limas Segiempat</option>
-                    <option>Volume Limas Segitiga</option>
-                    <option>Volume Prisma Segitiga</option>
-                    <option>Volume Tabung</option>
+                    <option>Balok</option>
+                    <option>Bola</option>
+                    <option>Kerucut</option>
+                    <option>Kubus</option>
+                    <option>Tabung</option>
                 </optgroup>
+            </select>
+        </div>
+
+        <div class="container select-calculated-container">
+            <select id="select-calculated">
+                <option selected>(pilih)</option>
+                <option id="select-keliling">Keliling</option>
+                <option id="select-luas">Luas</option>
+                <option id="select-luas-permukaan">Luas Permukaan</option>
+                <option id="select-volume">Volume</option>
             </select>
         </div>
 
@@ -70,6 +62,16 @@
             <div class="input">
                 <h3>Input 2</h3>
                 <input type="text" id="input2" placeholder="Input 2">
+            </div>
+
+            <div class="input">
+                <h3>Input 3</h3>
+                <input type="text" id="input3" placeholder="Input 3">
+            </div>
+
+            <div class="input">
+                <h3>Input 4</h3>
+                <input type="text" id="input4" placeholder="Input 4">
             </div>
         </div>
 
