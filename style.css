@@ -25,7 +25,33 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 65%;
+    height: 72%;
+}
+
+.select-type-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-type-container p{
+    width: 80%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.select-calculated-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.select-calculated-container p{
+    width: 80%;
+    text-align: center;
+    padding-bottom: 10px;
 }
 
 .input-container{
