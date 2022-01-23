@@ -48,8 +48,8 @@ type2 = {'Balok': {'Luas Permukaan': {'formula': lambda p, l, t, x: 2 * (p * l +
                   'Volume': {'formula': lambda r, x, y, z: (4/3) * math.pi * (r ** 3), 'input1': 'Masukkan Jari-Jari', 'input2': 'Kosongkan', 'input3': 'Kosongkan', 'input4': 'Kosongkan'}},
          'Kerucut': {'Luas Permukaan': {'formula': lambda r, s, x, y: math.pi * r * (r + s), 'input1': 'Masukkan Jari-Jari', 'input2': 'Masukkan Garis Pelukis', 'input3': 'Kosongkan', 'input4': 'Kosongkan'},
                      'Volume': {'formula': lambda r, t, x, y: (1/3) * math.pi * (r ** 2) * t, 'input1': 'Masukkan Jari-Jari', 'input2': 'Masukkan Tinggi', 'input3': 'Kosongkan', 'input4': 'Kosongkan'}},
-         'Kubus': {'Keliling': {'formula': lambda sisi, x, y, z: 6 * (sisi ** 2), 'input1': 'Masukkan Sisi', 'input2': 'Kosongkan', 'input3': 'Kosongkan', 'input4': 'Kosongkan'},
-                   'Luas': {'formula': lambda sisi, x, y, z: (sisi ** 3), 'input1': 'Masukkan Sisi', 'input2': 'Kosongkan', 'input3': 'Kosongkan', 'input4': 'Kosongkan'}},
+         'Kubus': {'Luas Permukaan': {'formula': lambda sisi, x, y, z: 6 * (sisi ** 2), 'input1': 'Masukkan Sisi', 'input2': 'Kosongkan', 'input3': 'Kosongkan', 'input4': 'Kosongkan'},
+                   'Volume': {'formula': lambda sisi, x, y, z: (sisi ** 3), 'input1': 'Masukkan Sisi', 'input2': 'Kosongkan', 'input3': 'Kosongkan', 'input4': 'Kosongkan'}},
          'Tabung': {'Luas Permukaan': {'formula': lambda r, t, x, y: 2 * math.pi * r * (r + t), 'input1': 'Masukkan Jari-Jari', 'input2': 'Masukkan Tinggi', 'input3': 'Kosongkan', 'input4': 'Kosongkan'},
                     'Volume': {'formula': lambda r, t, x, y: math.pi * (r ** 2) * t, 'input1': 'Masukkan Jari-Jari', 'input2': 'Masukkan Tinggi', 'input3': 'Kosongkan', 'input4': 'Kosongkan'}}}
 
@@ -58,8 +58,9 @@ def selectTypeAction(ev):
     x = selectType.value
     # Reset Input Field
     for i in range(1, 5):
+        input[str(i)].placeholder = 'Input ' + str(i)
         input[str(i)].value = ''
-        input[str(i)].disabled = False
+        input[str(i)].disabled = True
     # Ketika bangun dari type1 (bangun datar) terpilih, pilihan 'Luas Permukaan' dan 'Volume' akan di-disabled
     for key in type1.keys():
         if key.find(x) > -1:
@@ -152,7 +153,7 @@ selectType.bind('change', selectTypeAction) # Ketika pilihan bangun datar dan ru
 selectCalculated.bind('change', selectCalculatedAction) # Ketika pilihan 'yang akan dihitung' berubah, maka akan menjalankan fungsinya
 button.bind('click', main) # Memanggil 'Fungsi Main' ketika button di-click
 
-# Mengarahakan ke 'Fungsi keyEnter' ketiak 'enter' ditekan pada salah satu input field
+# Mengarahakan ke 'Fungsi keyEnter' ketika 'enter' ditekan pada salah satu input field
 input1.bind("keypress", keyEnter)
 input2.bind("keypress", keyEnter)
 input3.bind("keypress", keyEnter)
