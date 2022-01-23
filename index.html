@@ -23,7 +23,7 @@
         <div class="container select-type-container">
             <p>Pilih bangun ruang atau bangun datar yang akan dihitung</p>
             <select id="select-type">
-                <option selected>(pilih bangunan)</option>
+                <option selected>(pilih bangun)</option>
                 <optgroup label="Bangun Datar">
                     <option>Belah Ketupat</option>
                     <option>Jajar Genjang</option>
@@ -56,31 +56,37 @@
         </div>
 
         <div class="container input-container">
-            <div class="input">
-                <h3></h3>
-                <input type="text" id="input1" placeholder="Input 1">
+            <div class="input-text">
+                <p>Masukkan input sesuai dengan bangun ruang atau bangun datar yang dipilih</p>
+            </div>
+            <div class="input-field">
+                <div class="input">
+                    <h3></h3>
+                    <input type="text" id="input1" placeholder="Input 1" disabled>
+                </div>
+
+                <div class="input">
+                    <h3></h3>
+                    <input type="text" id="input2" placeholder="Input 2" disabled>
+                </div>
+
+                <div class="input">
+                    <h3></h3>
+                    <input type="text" id="input3" placeholder="Input 3" disabled>
+                </div>
+
+                <div class="input">
+                    <h3></h3>
+                    <input type="text" id="input4" placeholder="Input 4" disabled> 
+                </div>
             </div>
 
-            <div class="input">
-                <h3></h3>
-                <input type="text" id="input2" placeholder="Input 2">
-            </div>
-
-            <div class="input">
-                <h3></h3>
-                <input type="text" id="input3" placeholder="Input 3">
-            </div>
-
-            <div class="input">
-                <h3></h3>
-                <input type="text" id="input4" placeholder="Input 4">
-            </div>
         </div>
 
         <div class="container button-container">
             <button id="btn">Lihat hasil</button>
         </div>
-        
+
         <div class="container output-container">
             <div id="output">0</div>
         </div>
