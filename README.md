@@ -18,7 +18,7 @@ This application is made in the Python programming language as a scripting langu
 ![image](https://github.com/dipp-12/kelompok7r/assets/75561122/a024c058-4356-46a4-9fb4-22822029ed69)
 ![image](https://github.com/dipp-12/kelompok7r/assets/75561122/d039a6d3-8e5b-4f89-8335-d487091fffea)
 
-Here is link for the app https://dipp-12.github.io/kelompok7r/
+Here is link for the app https://dipp-12.github.io/Kalkulator-Bangun-Datar-dan-Bangun-Ruang/
 
 
 ### Requirements
